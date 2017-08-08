@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.e104.sms.app</groupId>
+		<artifactId>e104-sms</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.e104.sms.dao</groupId>
+	<artifactId>e104-sms-dao</artifactId>
+   <packaging>jar</packaging>
+ <dependencies>
+ 
+  <dependency>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>aws-java-sdk-dynamodb</artifactId>
+  </dependency>
+</dependencies>
+ 
+ <dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk-bom</artifactId>
+      <version>1.11.22</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+</project>
